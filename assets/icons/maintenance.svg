@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Llave -->
+  <path d="M14 50L36 28"/>
+  <circle cx="42" cy="22" r="12"/>
+  <path d="M42 14V22H50"/>
+  <!-- Check -->
+  <path d="M37 22L41 26L49 16" stroke-width="2.5"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Rayo grande -->
+  <polygon points="28,4 38,4 32,26 44,26 22,58 28,32 16,32" stroke="#F5A623" fill="none" stroke-width="2.5"/>
+  <!-- Reloj -->
+  <circle cx="48" cy="48" r="12"/>
+  <path d="M48 40V48H54"/>
+</svg>

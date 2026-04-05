@@ -444,14 +444,14 @@ img.project-card__image {
   position: absolute;
   inset: 0;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center center;
   display: block;
   transition: transform 0.6s ease;
 }
 
-/* Palermo: encuadrar tecnicos y edificio (zona centro-inferior) */
+/* Palermo: bajar encuadre para mostrar tecnicos en la parte inferior */
 img.project-card__image--palermo {
-  object-position: center 45%;
+  object-position: center 60%;
 }
 
 .project-card:hover img.project-card__image {
@@ -511,50 +511,28 @@ img.project-card__image--palermo {
   filter: drop-shadow(0 -3px 0 #17a2b8);
 }
 
-/* Circuit board pattern overlay in the lower area */
-.project-card__circuit {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 22%;
-  z-index: 2;
-  opacity: 0.08;
-  background-image:
-    linear-gradient(90deg, var(--color-accent) 1px, transparent 1px),
-    linear-gradient(0deg, var(--color-accent) 1px, transparent 1px),
-    radial-gradient(circle 2px, var(--color-accent) 1px, transparent 1px);
-  background-size:
-    40px 40px,
-    40px 40px,
-    40px 40px;
-  background-position: 0 0, 0 0, 20px 20px;
-  pointer-events: none;
-}
-
 /* Text info block */
 .project-card__info {
   position: relative;
   z-index: 3;
-  padding: 0 1.5rem 1.2rem;
+  padding: 0.4rem 1.2rem 0.8rem;
 }
 
 .project-card__title {
   color: var(--color-white);
   font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  line-height: 1.2;
-  margin-bottom: 0.3rem;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+  line-height: 1.25;
+  margin-bottom: 0.2rem;
 }
 
 .project-card__category {
   font-family: var(--font-tech);
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 /* Category label color per type */

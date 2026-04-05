@@ -766,11 +766,12 @@ img.project-card__image {
   margin-top: 3rem;
 }
 
-.section-cta .button,
-.button {
-  display: inline-block;
-  background-color: var(--color-accent);
-  color: var(--color-primary-dark);
+a.button,
+button.button,
+.section-cta a {
+  display: inline-block !important;
+  background-color: var(--color-accent) !important;
+  color: var(--color-primary-dark) !important;
   font-family: var(--font-heading);
   font-weight: 700;
   padding: 1rem 2.5rem;
@@ -779,12 +780,15 @@ img.project-card__image {
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 0.95rem;
-  transition: background-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.section-cta .button:hover,
-.button:hover {
-  background-color: var(--color-accent-light);
+a.button:hover,
+button.button:hover,
+.section-cta a:hover {
+  background-color: var(--color-accent-light) !important;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(245, 166, 35, 0.4);
 }
